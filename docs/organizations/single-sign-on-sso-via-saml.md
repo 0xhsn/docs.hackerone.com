@@ -34,7 +34,7 @@ To configure Single Sign-On via SAML:
 Field | Details
 ------ | ------
 Name | The name of the SAML provider
-Domain | The  domain for users that will be required to use SAML authentication. The domain must be verified before entering. If you don't have a verified domain, see [Domain Verification](domain-verification.html) to set up a verified domain.  *Note: Please use your own domain, not the HackerOne domain.*
+Domain(s) | The domains are for users that will be required to use SAML authentication. Domains must be verified before entering. If you don't have a verified domain(s), see [Domain Verification](domain-verification.html) to set up a verified domain.  *Note: Please use your own domain, not the HackerOne domain.* Additional domains can be added later. To do this, SAML provider must be disabled.
 Single Sign On URL | The URL from your SAML provider to initiate a single sign-on attempt, sometimes called the login URL.
 X509 Certificate | The certificate from your SAML provider to verify the single sign-on response.
 Require new users to use SAML | Chheck this box if new users with emails matching the verified domain are required to sign up with SAML.
@@ -59,7 +59,7 @@ Require new users to use SAML | Chheck this box if new users with emails matchin
 
 ![SAML setup 6](./images/saml-sso-setup-6.png)
 
-10. Select the initial set of users you want to migrate to SAML in the *Enable SAML* modal that pops up. You can choose from all users matching the configured domain(s), or only the users belong to your organization matching the configured domain(s). 
+10. Select the initial set of users you want to migrate to SAML in the *Enable SAML* modal that pops up. You can choose from all users matching the configured domain(s), or only the users belong to your organization matching the configured domain(s).
 
 11. Click **Enable and migrate**.
 
@@ -86,7 +86,7 @@ To configure an alternative certificate:
 
 ![SAML setup 10](./images/saml-sso-setup-8.png)
 
-3. Click **configure** next to *X509 ALTERNATIVE CERTIFICATE* 
+3. Click **configure** next to *X509 ALTERNATIVE CERTIFICATE*
 
 ![SAML setup 11](./images/saml-sso-setup-9.png)
 
